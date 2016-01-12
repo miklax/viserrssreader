@@ -1,0 +1,23 @@
+{
+  "name": "viserrssreader",
+  "version": "0.1.0",
+  "description": "RSS reader made in Angularjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miklax/viserrssreader.git"
+  },
+  "keywords": [
+    "rss",
+    "angular"
+  ],
+  "author": "Mihail Miklasevskij",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miklax/viserrssreader/issues"
+  },
+  "homepage": "https://github.com/miklax/viserrssreader#readme"
+}
