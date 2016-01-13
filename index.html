@@ -3,17 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Viser RSS reader</title>
+    <!-- ANGULAR biblioteke -->
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+
+    <!-- jquery -->
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+
+    <!-- glavna skripta -->
+    <script src="main.js" charset="utf-8"></script>
   </head>
-  <body ng-app="viserRss">
 
-    <div data-ng-controller="FeedCtrl">
-            <h4>RSS Feed Reader using AngularJS</h4>
+  <body ng-app="viser">
 
-    <form class="form-horizontal col-md-12" role="form">
-        <div class = "row">
-            <div class="col-md-6">
-
-
+      <div ng-controller="feedc">
+        {{ controllerok }}
+        {{ 5+ 3}}
+      </div>
 
   </body>
 </html>
