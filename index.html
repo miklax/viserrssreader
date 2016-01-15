@@ -18,6 +18,7 @@
       <div ng-controller="feedc">
 
         <a href="#" ng-click="feedSrc='http://www.viser.edu.rs/xml/rss-vesti.php';loadFeed($event);">Viser vesti</a>
+        <a href="#" ng-click="feedSrc='http://www.theverge.com/rss/frontpage';loadFeed($event);">N1 Info</a>
 
         <div>
           <ul>
@@ -26,6 +27,7 @@
               <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>
               <p class="text-left">{{feed.contentSnippet}}</p>
               <span class="small">{{feed.publishedDate}}</span>
+
             </li>
           </ul>
 
