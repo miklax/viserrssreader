@@ -12,12 +12,19 @@ app = angular.module('viser', [])
 app.controller('feedc',  function($scope, FeedService){
   $scope.loadButonText = "Load"; //dugme tekst
 
+  $scope.htmlVesti = "";
+  // return theString.replace(/^\/|\/$/g, '');
+
+
   $scope.loadFeed = function(e){
       FeedService.parseFeed($scope.feedSrc)
       .then(function(res){
           $scope.loadButonText = angular.element(e.target).text();
           $scope.feeds = res.data.responseData.feed.entries;
-          console.log($scope.feeds);
+          $scope.htmlVesti = res.data.responseData.feed.link;
+          console.log($scope.htmlVesti);
+          // $scope.htmlVesti.replace(/^\"|\"$/g, '');
+
       });
   };
 });
