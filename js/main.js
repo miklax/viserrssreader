@@ -22,9 +22,13 @@ app.controller('feedc',  function($scope, FeedService){
           $scope.loadButonText = angular.element(e.target).text();
           $scope.feeds = res.data.responseData.feed.entries;
           $scope.htmlVesti = res.data.responseData.feed.link;
-          console.log($scope.htmlVesti);
+          console.log($scope.feeds);
           // $scope.htmlVesti.replace(/^\"|\"$/g, '');
 
       });
+  };
+
+  $scope.obrisatiNavodnike = function(){
+    return 42;
   };
 });

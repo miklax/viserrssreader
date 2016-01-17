@@ -44,9 +44,10 @@
             <span ng-show="feeds.length > 0">{{(feeds | filter:filterText).length}} Vesti</span>
             <li ng-repeat="feed in feeds">
               <h5 class="content-subhead"><a href="{{feed.link}}">{{feed.title}}</a></h5>
-              {{feed.contentSnippet}}
+              <!-- {{feed.contentSnippet}} -->
               <hr class="linija-tanka">
               <!-- {{feed.content}} -->
+              {{feed.obrisatiNavodnike()}}
               {{feed.htmlVesti}}
               <span class="small">{{feed.publishedDate}}</span>
             </li>
